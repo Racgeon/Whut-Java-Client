@@ -1,0 +1,191 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+			name: "this"
+			"$locationPolicy": 2
+			"title": "档案管理系统"
+			"$sizePolicy": 2
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane"
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"rows": 4
+					"columns": 1
+				} ) {
+					name: "panel"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+						name: "subtitlePanel"
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "subtitle"
+							"text": "档案管理系统"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "楷体", 0, 18 )
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"rows": 3
+					} ) {
+						name: "usernamePanelHolder"
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "placeholder1"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 0
+						} ) {
+							name: "usernamePanel"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label2"
+								"text": "            "
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "usernameLabel"
+								"text": "账号"
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "    "
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "usernameField"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "                "
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "placeholder2"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"rows": 3
+					} ) {
+						name: "passwordPanelHolder"
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "placeholder3"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 0
+						} ) {
+							name: "passwordPanel"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label5"
+								"text": "            "
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "passwordLabel"
+								"text": "密码"
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "    "
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+							add( new FormComponent( "javax.swing.JPasswordField" ) {
+								name: "passwordField"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label7"
+								"text": "                "
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+							name: "placeholder4"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+						"vgap": 20
+						"hgap": 40
+					} ) {
+						name: "buttonPanel"
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "login"
+							"text": "登录"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loginMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "exit"
+							"text": "退出"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "exitMouseClicked", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "登录"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 140, 185 )
+			"size": new java.awt.Dimension( 470, 370 )
+		} )
+	}
+}

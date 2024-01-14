@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.CardLayout ) ) {
+			name: "this"
+			"$locationPolicy": 2
+			"$sizePolicy": 2
+			"title": "档案管理系统"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "subtitle"
+				"text": "档案管理系统"
+				"font": new java.awt.Font( "楷体", 1, 20 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card1"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar"
+				"preferredSize": new java.awt.Dimension( 120, 24 )
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "userMenu"
+					"text": "用户"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "add"
+						"text": "新增用户"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "addMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "delete"
+						"text": "删除用户"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "deleteMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "update"
+						"text": "修改用户"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "updateMousePressed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "fileMenu"
+					"text": "文件"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "list"
+						"text": "文件列表"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "listMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "upload"
+						"text": "上传文件"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "uploadMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "download"
+						"text": "下载文件"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "downloadMousePressed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "selfMenu"
+					"text": "个人"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "changePassword"
+						"text": "修改密码"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "changePasswordMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "logout"
+						"text": "退出登录"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "logoutMousePressed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 140, 195 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
+
